@@ -58,9 +58,9 @@ async function run() {
 
 
 
-    app.get("/", async (req, res) => {
-      res.send('server is running')
-    })
+    // app.get("/", async (req, res) => {
+    //   res.send('server is running')
+    // })
 
     // app.get("/movies/:id", async (req, res) => {
     //   const id = req.params.id;
