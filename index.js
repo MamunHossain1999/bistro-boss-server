@@ -50,7 +50,14 @@ async function run() {
       res.send(result)
     })
 
-    
+    // card data get
+    app.get("/carts", async(req, res)=>{
+      const result = await cartCollection.find().toArray();
+      res.send(result)
+    })
+
+
+
     app.get("/", async (req, res) => {
       res.send('server is running')
     })
